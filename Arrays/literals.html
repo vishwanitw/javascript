@@ -7,10 +7,16 @@
 
 	function myFunction () {
 		var myArray = ['vishu','pasha','krishna', 1,3,7 ];
-		 var length = myArray.length;
 
-		document.getElementById('demo').innerHTML = myArray;
+		document.getElementById('demo1').innerHTML = myArray;
+		var length = myArray.length;
 		document.getElementById('demo2').innerHTML = 'Length of array is '+length;
+
+		document.getElementById('add').innerHTML=("Adding element by using length property");
+		    myArray[myArray.length] = "Ravi";
+		    var length = myArray.length;
+		    document.getElementById('demo3').innerHTML = myArray;
+			document.getElementById('demo4').innerHTML = 'Length of array is '+length;
 	}
 
 	</script>
@@ -19,7 +25,10 @@
 <h2>This is Arrays literals</h2>
  <h3>Array item are </h3>
  <button id="btn" onclick="myFunction()">display</button>
-  <div id="demo"></div>    
+  <div id="demo1"></div>    
   <div id="demo2"></div>
+  <div id="add"> </div>
+  <div id="demo3"></div>    
+  <div id="demo4"></div>
 </body>
 </html>
