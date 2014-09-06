@@ -17,11 +17,26 @@
 
 	<body>
 	<h3>This is toString method:</h3>
-	<button id="btn" onclick="myFunction()">display</button><br>
+	<button onclick="myFunction()">display</button><br>
 	<div id="demo1"></div>
 	<h3>This is join() method</h3>
 	<button onclick="myJoin()">display</button><br>
 	<div id="demo2"></div>
+	<h3>This is pop() method</h3>
+	<button onclick="myPop()">pop</button><br>
+	<div id="demo3"></div>
+	
+	<script type="text/javascript">
+	var fruits = ["Banana", "Orange", "Apple", "Mango"];
+	document.getElementById("demo3").innerHTML = fruits;
+
+	function myPop() {
+    fruits.pop()
+    document.getElementById("demo3").innerHTML = fruits;
+	}
+	</script>
+
 	</body>
+
 </html>
 
