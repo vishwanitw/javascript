@@ -6,22 +6,26 @@
 	<script type="text/javascript">
 	function myFunction () {
 		var arr = ['hello','hai','greetings','fun'];
+		document.getElementById('demo1').innerHTML = arr.toString();
+	}
 
-		var test = "<ul>";
-		for (var i = 0; i < arr.length; i++) {
-			test = test + "<li>" + arr[i] + "</li>";
-		};
-		test = test + "</ul>";
-		document.getElementById('demo1').innerHTML = test.toString();
+	function myJoin(){
+		var myArr = ['hello','welcome','to','javascript']
+		document.getElementById('demo2').innerHTML = myArr.join('*');
+
 
 	}
+
 
 	</script>
 
 	<body>
-	<h3>This is converting array to string :</h3>
-	<button id="btn" onclick="myFunction()">display</button>
+	<h3>This is toString method:</h3>
+	<button id="btn" onclick="myFunction()">display</button><br>
 	<div id="demo1"></div>
+	<h3>This is join() method</h3>
+	<button onclick="myJoin()">display</button><br>
+	<div id="demo2"></div>
 	</body>
 </html>
 
