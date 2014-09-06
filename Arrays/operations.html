@@ -10,9 +10,12 @@
 	}
 
 	function myJoin(){
-		var myArr = ['hello','welcome','to','javascript']
+		var myArr = ['hello','welcome','to','javascript'];
 		document.getElementById('demo2').innerHTML = myArr.join('*');
 	}
+	
+
+
 	</script>
 
 	<body>
@@ -25,14 +28,22 @@
 	<h3>This is pop() method</h3>
 	<button onclick="myPop()">pop</button><br>
 	<div id="demo3"></div>
+	<h3>This is push() method</h3>
+	<button onclick="myPush()">push</button><br>
+	<div id="demo4"></div>
 	
 	<script type="text/javascript">
 	var fruits = ["Banana", "Orange", "Apple", "Mango"];
 	document.getElementById("demo3").innerHTML = fruits;
-
 	function myPop() {
-    fruits.pop()
-    document.getElementById("demo3").innerHTML = fruits;
+    	fruits.pop()
+    	document.getElementById("demo3").innerHTML = fruits;
+	}
+	var myArr2 = ['hello','welcome','to','javascript'];
+	document.getElementById('demo4').innerHTML = myArr2;
+	function myPush () {
+		myArr2.push("vishu");
+		document.getElementById('demo4').innerHTML = myArr2;
 	}
 	</script>
 
