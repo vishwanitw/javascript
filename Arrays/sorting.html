@@ -5,20 +5,35 @@
 	<script type="text/javascript">
 	
 	function arrSort () {
-		arr.sort();
-		document.getElementById('demo2').innerHTML = arr;
-
+		arr1.sort();
+		document.getElementById('demo2').innerHTML = arr1;
+		arr1.reverse();
+		document.getElementById('demo3').innerHTML ="Reverse order is : "+ arr1;
+	}
+	function sortNumbers (argument) {
+		arr2.sort();
+		document.getElementById('demo5').innerHTML = arr2;
 	}
 	</script>
 </head>
 <body>
+	<h3>sortin elements </h3>
 	<div id="demo1"></div>
 	<button onclick="arrSort()">sort</button>
 	<div id="demo2"></div>
+	<h3>reverse order</h3>
+	<div id="demo3"></div>
+	<h3>sortin numbers </h3>
+	<div id="demo4"></div>
+	<button onclick="sortNumbers()">sort</button>
+	<div id="demo5"></div>
 
 <script type="text/javascript">
-	var arr = ['Pasha','Vishu','Krishna','Ravi'];
-	document.getElementById('demo1').innerHTML = arr;
+	var arr1 = ['Pasha','Vishu','Krishna','Ravi'];
+	document.getElementById('demo1').innerHTML = arr1;
+
+	var arr2 = [25,63,12,56,32];
+	document.getElementById('demo3').innerHTML = arr2;
 </script>
 </body>
 </html>
