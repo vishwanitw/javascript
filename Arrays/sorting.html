@@ -11,9 +11,13 @@
 		document.getElementById('demo3').innerHTML ="Reverse order is : "+ arr1;
 	}
 	function sortNumbers (argument) {
-		arr2.sort();
+		arr2.sort(function  (a, b) {
+			return (a-b);
+		});
 		document.getElementById('demo5').innerHTML = arr2;
-		arr2.reverse();
+		arr2.reverse(function  (a, b) {
+			return (b-a);
+		});
 		document.getElementById('demo6').innerHTML = "Reverse order is :" +arr2;
 	}
 	</script>
@@ -30,7 +34,6 @@
 	<button onclick="sortNumbers()">sort</button>
 	<div id="demo5"></div>
 	<div id="demo6"></div>
-
 
 <script type="text/javascript">
 	var arr1 = ['Pasha','Vishu','Krishna','Ravi'];
